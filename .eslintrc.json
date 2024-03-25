@@ -5,7 +5,7 @@
     "node": true,
     "jest": true
   },
-  "extends": ["xo", "plugin:react/recommended", "prettier"],
+  "extends": ["xo", "prettier"],
   "overrides": [
     {
       "extends": ["xo-typescript", "prettier"],
