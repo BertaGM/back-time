@@ -4,6 +4,7 @@ import chalk from "chalk";
 import debugCreator from "debug";
 
 const app = express();
+app.disable("x-powered-by");
 
 const debug = debugCreator("time:server:app");
 
