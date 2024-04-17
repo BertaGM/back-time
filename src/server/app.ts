@@ -5,7 +5,7 @@ import debugCreator from "debug";
 
 const app = express();
 
-const debug = debugCreator("src:server:app");
+const debug = debugCreator("time:server:app");
 
 export const startServer = (port: number) => {
   app.listen(port, () => {
