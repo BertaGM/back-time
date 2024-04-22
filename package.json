@@ -45,6 +45,9 @@
     "debug": "^4.3.4",
     "dotenv": "^16.4.5",
     "morgan": "^1.10.0",
-    "prettier": "^3.2.5"
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "prettier": "^3.2.5",
+    "sequelize": "^6.37.3"
   }
 }
