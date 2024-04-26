@@ -19,7 +19,7 @@ const user = sequelize.define("user", {
     allowNull: false,
   },
   dob: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.TEXT,
     allowNull: false,
   },
   phone: {
@@ -40,7 +40,7 @@ const user = sequelize.define("user", {
     allowNull: false,
   },
   aboutYou: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: true,
   },
   picture: {
@@ -52,11 +52,11 @@ const user = sequelize.define("user", {
     allowNull: true,
   },
   service: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: true,
   },
   serviceDescription: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: true,
   },
   password: {
