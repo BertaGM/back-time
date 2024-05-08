@@ -1,28 +1,23 @@
 import { DataTypes, Sequelize } from "sequelize";
 
-const sequelize = new Sequelize(
-  "postgres",
-  "postgres.ombnqehwnuloqlxwfsvx",
-  "&-9R9bqQc22Ch-",
-);
+const sequelize = new Sequelize("chronos", "root", {
+  dialect: "postgres",
+});
 
-const user = sequelize.define("user", {
-  _id: {
-    type: DataTypes.NUMBER,
-  },
-  name: {
+const User = sequelize.define("user", {
+  username: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  lastName: {
+  surname: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  dob: {
+  birthday: {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  phone: {
+  phoneNumber: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
@@ -43,26 +38,26 @@ const user = sequelize.define("user", {
     type: DataTypes.TEXT,
     allowNull: true,
   },
-  picture: {
+  profileImage: {
     type: DataTypes.STRING,
     allowNull: true,
   },
-  category: {
+  hability: {
     type: DataTypes.STRING,
     allowNull: true,
   },
-  service: {
+  habilityTitle: {
     type: DataTypes.TEXT,
     allowNull: true,
   },
-  serviceDescription: {
+  habilityDescription: {
     type: DataTypes.TEXT,
     allowNull: true,
   },
-  password: {
+  userPassword: {
     type: DataTypes.STRING,
     allowNull: false,
   },
 });
 
-module.exports = user;
+export default User;

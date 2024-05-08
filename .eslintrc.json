@@ -17,6 +17,12 @@
         ],
         "no-unused-vars": "error"
       }
+    },
+    {
+      "files": ["**/model/*.ts"],
+      "rules": {
+        "@typescript-eslint/naming-convention": "off"
+      }
     }
   ],
   "parserOptions": {
